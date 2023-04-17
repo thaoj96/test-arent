@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import MainLayout from "../layout";
 import loadable from "./loadable";
 const Home = loadable(() => import("../Pages/Home"));
+const Detail = loadable(() => import("../Pages/Detail"));
 
 const MainRoutes = () => {
   const element = useRoutes([
@@ -15,6 +16,10 @@ const MainRoutes = () => {
             {
               index: true,
               element: <Home />,
+            },
+            {
+              path: "/detail",
+              element: <Detail />,
             },
           ],
         },

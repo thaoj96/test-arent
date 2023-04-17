@@ -19,7 +19,7 @@
 }
 
 .item-header-number {
-  background-color: #EA6C00;
+  background-color: #ea6c00;
   width: 16px;
   height: 16px;
   border-radius: 8px;
@@ -29,4 +29,11 @@
   position: absolute;
   top: -5px;
   left: 16px;
+}
+
+.scroll-content {
+  overflow: scroll;
+}
+.scroll-content::-webkit-scrollbar {
+  width: 0;
 }

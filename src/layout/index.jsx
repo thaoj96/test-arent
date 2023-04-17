@@ -10,11 +10,13 @@ const MainLayout = () => {
     <div className="main-layout">
       <Header />
       <div
+        className="scroll-content"
         style={{
           height: gui.screenHeight - 193,
           backgroundColor: "#FFF",
-          overflow: "hidden",
+          overflow: "auto",
           color: "#333",
+          scrollbarWidth: "thin",
         }}
       >
         <Outlet />

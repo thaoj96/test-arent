@@ -39,7 +39,9 @@ const Header = () => {
       className="flex-row main-header"
       style={{ justifyContent: "space-between" }}
     >
-      <IconLogo />
+      <div style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
+        <IconLogo />
+      </div>
       <div className="flex-row">
         {ItemMenu?.map((item, index) => (
           <div
