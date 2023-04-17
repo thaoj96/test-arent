@@ -19,8 +19,8 @@ const IconBgFilter = () => (
         y2="118.302"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFCC21" />
-        <stop offset="1" stop-color="#FF963C" />
+        <stop stopColor="#FFCC21" />
+        <stop offset="1" stopColor="#FF963C" />
       </linearGradient>
     </defs>
   </svg>
@@ -33,10 +33,10 @@ const IconCoffee = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_28507_66)">
+    <g clipPath="url(#clip0_28507_66)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M34 4.04639C31.7853 4.04639 29.9036 2.30713 29.9036 0H4.14856C4.14856 2.30396 2.21631 4.04639 0 4.04639V6.66712H34V4.04639ZM1.70044 9.99988L6.90674 40H27.2008L32.3013 9.99988H1.70044ZM28.2861 13.3264L27.1519 20H6.95397L5.81981 13.3264H28.2861ZM9.78723 36.6672L8.6532 30.0001H25.4528L24.3203 36.6672H9.78723Z"
         fill="white"
       />
@@ -66,5 +66,12 @@ const IconFilter1 = () => (
     />
   </svg>
 );
+const IconScrollToTop = () => (
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 0.5C36.9787 0.5 47.5 11.0213 47.5 24C47.5 36.9787 36.9787 47.5 24 47.5C11.0213 47.5 0.5 36.9787 0.5 24C0.5 11.0213 11.0213 0.5 24 0.5Z" fill="white" fillRule="0.01" stroke="#777777" />
+    <path d="M30.5852 28.042L24.0002 21.6579L17.4151 28.042L16.5389 27.1925L24.0002 19.959L31.4614 27.1925L30.5852 28.042Z" fill="#777777" />
+  </svg>
 
-export { IconBgFilter, IconCoffee, IconFilter1 };
+);
+
+export { IconBgFilter, IconCoffee, IconFilter1, IconScrollToTop };

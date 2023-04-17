@@ -22,19 +22,10 @@ export default function ViewMid() {
           flexWrap: "wrap",
           paddingLeft: 160,
           paddingRight: 160,
-          width: 1000,
+          // width: 1000,
         }}
       >
-        {[
-          { img: m01, type: "MORNING", text: "05.21.Morning" },
-          { img: d01, type: "LUNCH", text: "05.21.Lunch" },
-          { img: d02, type: "DINNER", text: "05.21.Dinner" },
-          { img: l01, type: "SNACK", text: "05.21.Snack" },
-          { img: l02, type: "MORNING", text: "05.20.Morning" },
-          { img: l03, type: "LUNCH", text: "05.20.Lunch" },
-          { img: s01, type: "DINNER", text: "05.20.Dinner" },
-          { img: m01, type: "SNACK", text: "05.21.Snack" },
-        ].map((item, index) => (
+        {fakeData.map((item, index) => (
           <div
             key={index.toString()}
             style={{
@@ -65,3 +56,54 @@ export default function ViewMid() {
     </div>
   );
 }
+
+const fakeData = [
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+  { img: m01, type: "MORNING", text: "05.21.Morning" },
+  { img: d01, type: "LUNCH", text: "05.21.Lunch" },
+  { img: d02, type: "DINNER", text: "05.21.Dinner" },
+  { img: l01, type: "SNACK", text: "05.21.Snack" },
+  { img: l02, type: "MORNING", text: "05.20.Morning" },
+  { img: l03, type: "LUNCH", text: "05.20.Lunch" },
+  { img: s01, type: "DINNER", text: "05.20.Dinner" },
+  { img: m01, type: "SNACK", text: "05.21.Snack" },
+]
