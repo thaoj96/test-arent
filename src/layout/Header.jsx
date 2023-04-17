@@ -21,12 +21,12 @@ const Header = () => {
     {
       icon: <IconChallenge />,
       text: "チャレンジ",
-      onClick: () => navigate("/detail"),
+      onClick: () => { },
     },
     {
       icon: <IconInfo />,
       text: "お知らせ",
-      onClick: () => navigate("/detail"),
+      onClick: () => { },
       showNumber: 1,
     },
     {

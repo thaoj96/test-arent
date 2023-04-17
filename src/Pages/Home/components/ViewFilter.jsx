@@ -1,7 +1,15 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { IconBgFilter, IconCoffee, IconFilter1 } from "../../../Icons/orther";
+import useUrlState from "@ahooksjs/use-url-state";
 
 export default function ViewFilter() {
+  const [params, setParams] = useUrlState({
+    filter: "",
+  });
+
+  const onClickFilter = (key) => setParams({ filter: params?.filter === key ? "" : key })
+
   return (
     <div
       className="flex-row"
@@ -11,21 +19,26 @@ export default function ViewFilter() {
         {
           icon: <IconFilter1 />,
           text: "Morning",
+          onClick: () => onClickFilter("MORNING")
         },
         {
           icon: <IconFilter1 />,
           text: "Lunch",
+          onClick: () => onClickFilter("LUNCH")
         },
         {
           icon: <IconFilter1 />,
           text: "Dinner",
+          onClick: () => onClickFilter("DINNER")
         },
         {
           icon: <IconCoffee />,
           text: "Snack",
+          onClick: () => onClickFilter("SNACK")
         },
       ].map((item, index) => (
         <div
+          onClick={item.onClick}
           style={{
             position: "relative",
             margin: "0 42px 0 42px",
